@@ -1,4 +1,5 @@
-<div class="main-container">
+<div class="main-container flex-column">
+  <h1 class="text-center">Get to work!</h1>
   <div class="countdown-timer">
     <div class="base-timer">
       <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -22,16 +23,20 @@
         <span class="seconds">00</span>
       </div>
     </div>
-    <div class="controls">
-      <div id="stop">
+  </div>
+  <div class="controls">
+    <div class="controls-left">
+      <span id="stop" class="button">
         Stop
-      </div>
-      <div id="start">
+      </span>
+    </div>
+    <div class="controls-right">
+      <span id="start" class="button">
         Start
-      </div>
-      <div id="pause" class="hide-control">
+      </span>
+      <span id="pause" class="button hide-control">
         Pause
-      </div>
+      </span>
     </div>
   </div>
 </div>
