@@ -1,22 +1,36 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-6">
-      <div class="countdown-timer">
-        <div class="timer">
-          <span class="minutes">25</span> :
-          <span class="seconds">00</span>
-        </div>
-        <div class="controls">
-          <div id="start">
-            <i class="fas fa-play fa-2x"></i>
-          </div>
-          <div id="pause" class="hide-control">
-            <i class="fas fa-pause fa-2x"></i>
-          </div>
-          <div id="stop" class="hide-control">
-            <i class="fas fa-stop fa-2x"></i>
-          </div>
-        </div>
+<div class="main-container">
+  <div class="countdown-timer">
+    <div class="base-timer">
+      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <g class="base-timer__circle">
+          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+          <path
+            id="base-timer-path-remaining"
+            stroke-dasharray="283"
+            class="base-timer__path-remaining green"
+            d="
+              M 50, 50
+              m -45, 0
+              a 45,45 0 1,0 90,0
+              a 45,45 0 1,0 -90,0
+            "
+          ></path>
+        </g>
+      </svg>
+      <div id="base-timer-label" class="base-timer__label">
+        <span class="minutes">25</span> :
+        <span class="seconds">00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <div id="stop">
+        Stop
+      </div>
+      <div id="start">
+        Start
+      </div>
+      <div id="pause" class="hide-control">
+        Pause
       </div>
     </div>
   </div>
