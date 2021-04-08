@@ -4,6 +4,7 @@ const countdownTimer = () => {
   const countdownElement = document.querySelector('.countdown-timer');
 
   if (countdownElement) {
+    const timerTitle = document.getElementById('timer-title');
     const startBtn = document.getElementById('start');
     const pauseBtn = document.getElementById('pause');
     const stopBtn = document.getElementById('stop');
@@ -44,17 +45,20 @@ const countdownTimer = () => {
       document
         .getElementById("base-timer-path-remaining")
         .classList.add('transition-all');
+      timerTitle.innerText = "Focusing...";
     });
     pauseBtn.addEventListener('click', () => {
       timer.pause();
       startBtn.classList.remove('hide-control');
       pauseBtn.classList.add('hide-control');
+      timerTitle.innerText = "Paused";
     });
     stopBtn.addEventListener('click', () => {
       timer.reset();
       timer.stop();
       startBtn.classList.remove('hide-control');
       pauseBtn.classList.add('hide-control');
+      timerTitle.innerText = "Get to work!";
     });
 
     timer.addEventListener('secondsUpdated', () => {
