@@ -1,11 +1,13 @@
 .main-container {
   margin: 0 auto;
-  min-height: calc(100vh - 66px);
-  padding: 34px 25px;
-  max-width: 375px;
+  width: 90%;
 }
 
-.flex-column {
-  display: flex;
-  justify-content: space-between;
+@media only screen and (min-width: $tablet-size){
+  .main-container {
+    width: 375px;
+  }
+  #header .main-container {
+    width: 90%;
+  }
 }

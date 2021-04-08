@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+.home {
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 80px);
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: $desktop-size){
+  .home {
+    min-height: calc(100vh - 70px);
+  }
+}

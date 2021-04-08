@@ -9,7 +9,37 @@ h2 {
   font-size: 1.5; // subtitle: 24px = 1.5rem
   font-weight: 500;
 }
+a {
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+
+  &:hover {
+    color: black;
+    opacity: 0.7;
+  }
+}
 
 .text-centered {
   text-align: center;
 }
+
+.flex {
+  display: flex;
+}
+
+// @media only screen and (max-width: 770px){
+//   //MOBILE ONLY STYLES
+// }
+
+// @media only screen and (min-width:771px) and (max-width:1040px){
+//   //TABLET ONLY STYLES
+// }
+
+// @media (min-width: 771px){
+//   //STYLING COMMON TO BOTH TABLET AND DESKTOP
+// }
+
+// @media (min-width: 1040px){
+//   //DESKTOP ONLY STYLES
+// }
